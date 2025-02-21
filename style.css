@@ -1,0 +1,253 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 5px;
+}
+::selection {
+    background-color: #000;
+}
+
+/* font */
+@font-face {
+    font-family: 'My-Font';
+    src: url('Hanalei-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Body Styling */
+body {
+    background-color: #111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-position: center;
+    background-image: url(mani_img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.7); /* Adds transparency */
+    background-blend-mode: darken;
+    height: 500px;
+}
+
+
+/* Logo */
+.logo img {
+    width: 40px;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 8rem;
+    padding: 40px;
+    max-width: 1200px;
+    position: absolute;
+    bottom: 15rem;
+    left: 14rem;
+}
+
+/* Album Image */
+.album-image img {
+    width: 280px;
+    border-radius: 5px;
+}
+
+/* Album Info */
+.album-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Title & Artist */
+.album-title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'My-Font' ;
+}
+
+.artist-name {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Avatars */
+.avatars {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatars img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.avatars i {
+    font-size: 40px;
+    color: #666;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.listen-now, .share {
+    background-color: #00d26a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+}
+
+.share {
+    background-color: #444;
+}
+
+/* Sidebar Menu */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.menu:hover .social-icons {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.social-icons li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons li a:hover {
+    color: #00d26a;
+}
+/* =========================================== */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;  
+}
+.heading .head{
+    font-size: 3rem;
+    font-family: serif;
+    font-style: bold;
+    margin: 0.5rem 0 0.5rem 4rem;
+}
+
+.streams{
+    display: flex;
+    gap: 4px;
+    border: solid white 2px;
+    width: fit-content;
+    margin: 0.5rem 0 0.5rem 4rem;
+    flex-wrap: wrap;
+}
+.streams .st{
+    align-content: center;
+    border-right: solid white 1px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.heading .hode{
+    margin-bottom: 2rem;
+}
+/* play list */
+.main .sub2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.sub2 .options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.5rem 4rem 2rem 4rem;
+}
+.options .divone{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.options .divtow{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+.divone .subparagraph{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+   
